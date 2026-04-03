@@ -310,7 +310,7 @@ const Navbar = () => {
           </Link> */}
           <Link href="/" className="nav-logo">
             <Image
-              src="/images/ivlogo01-removebg-preview.png"
+              src="/images/logo-dark.png"
               alt="intellivibes Logo"
               width={140}
               height={40}
