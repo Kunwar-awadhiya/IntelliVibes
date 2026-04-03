@@ -37,7 +37,7 @@ const Navbar = () => {
     { label: "Home", href: "/" },
     { label: "Internships", href: "/internships" },
     { label: "About", href: "/about" },
-    { label: "Contact", href: "/contact" },
+    { label: "URL Validator", href: "/url-validator" },
   ];
 
   return (
