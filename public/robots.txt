@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://internvibes.live
+
+# Sitemaps
+Sitemap: https://internvibes.live/sitemap.xml
