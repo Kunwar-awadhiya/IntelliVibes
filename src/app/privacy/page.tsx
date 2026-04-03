@@ -9,7 +9,7 @@ export default function PrivacyPolicy() {
       <p className="mb-4">Last updated: June 10, 2025</p>
 
       <p className="mb-4">
-        Welcome to <strong>InternVibes</strong> (https://internvibes.live / internvibes.in). Your privacy is critically important to us. This Privacy Policy
+        Welcome to <strong>intellivibes</strong> (https://intellivibes.live / intellivibes.in). Your privacy is critically important to us. This Privacy Policy
         outlines how we collect, use, protect, and disclose your information when you use our website.
       </p>
 
@@ -51,11 +51,11 @@ export default function PrivacyPolicy() {
       <p className="mb-4">We use modern security tools to protect your data. However, no system can be 100% secure.</p>
 
       <h2 className="text-xl font-semibold mt-8 mb-2">8. Children’s Privacy</h2>
-      <p className="mb-4">InternVibes is for users 16 and above. We don’t knowingly collect data from children under 16.</p>
+      <p className="mb-4">intellivibes is for users 16 and above. We don’t knowingly collect data from children under 16.</p>
 
       <h2 className="text-xl font-semibold mt-8 mb-2">9. Your Rights</h2>
       <p className="mb-4">
-        You can access, correct, or delete your data. Unsubscribe from emails anytime. Contact us at <strong>internvibes@gmail.com</strong>
+        You can access, correct, or delete your data. Unsubscribe from emails anytime. Contact us at <strong>intellivibes@gmail.com</strong>
       </p>
 
       <h2 className="text-xl font-semibold mt-8 mb-2">10. Changes to This Policy</h2>
@@ -63,9 +63,9 @@ export default function PrivacyPolicy() {
 
       <h2 className="text-xl font-semibold mt-8 mb-2">11. Contact Us</h2>
       <p className="mb-4">
-        📩 <strong>internvibesofficial@gmail.com</strong><br />
-        🌐 <strong>https://internvibes.live</strong><br />
-        🧑‍💼 Operated by the InternVibes Team
+        📩 <strong>intellivibesofficial@gmail.com</strong><br />
+        🌐 <strong>https://intellivibes.live</strong><br />
+        🧑‍💼 Operated by the intellivibes Team
       </p>
     </div>
   );

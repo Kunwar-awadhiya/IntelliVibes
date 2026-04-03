@@ -306,12 +306,12 @@ const Navbar = () => {
             <div className="nav-logo-icon">
               <Briefcase size={17} color="#fff" />
             </div>
-            <span className="nav-logo-text">InternVibes</span>
+            <span className="nav-logo-text">intellivibes</span>
           </Link> */}
           <Link href="/" className="nav-logo">
             <Image
               src="/images/ivlogo01-removebg-preview.png"
-              alt="InternVibes Logo"
+              alt="intellivibes Logo"
               width={140}
               height={40}
               className="h-18 w-auto"
@@ -333,10 +333,10 @@ const Navbar = () => {
           <div className="nav-actions">
             {!user ? (
               <>
-                <Link href="/account" className="btn-ghost">
+                <Link href="/Account" className="btn-ghost">
                   Sign In
                 </Link>
-                <Link href="/account" className="btn-primary">
+                <Link href="/Account" className="btn-primary">
                   Get Started
                 </Link>
               </>

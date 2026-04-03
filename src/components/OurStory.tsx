@@ -40,7 +40,7 @@ const storySteps = [
   },
   {
     icon: Heart,
-    title: 'InternVibes Born',
+    title: 'intellivibes Born',
     description: 'A platform built for students, by students.',
     accent: '#6366f1',
     accentLight: 'rgba(99,102,241,0.08)',
@@ -411,7 +411,7 @@ export default function OurStory() {
               Our <em>story</em>
             </h2>
             <p className="os-sub">
-              From frustration to innovation — how InternVibes came to life.
+              From frustration to innovation — how intellivibes came to life.
             </p>
           </div>
 
@@ -446,7 +446,7 @@ export default function OurStory() {
               <div {...vis('para3', 200)}>
                 <div className="os-quote-block accented">
                   <p className="os-quote-text">
-                    That spark became <strong>InternVibes</strong> — a platform dedicated to connecting students with verified internships so no one has to waste time chasing dead ends.
+                    That spark became <strong>intellivibes</strong> — a platform dedicated to connecting students with verified internships so no one has to waste time chasing dead ends.
                   </p>
                 </div>
               </div>
@@ -510,7 +510,7 @@ export default function OurStory() {
                     To eliminate the frustration of job hunting by providing a curated, verified platform where students can discover genuine opportunities — effortlessly.
                   </p>
                   <a
-                    href="https://t.me/InternVibes"
+                    href="https://t.me/intellivibes"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="os-mission-cta"

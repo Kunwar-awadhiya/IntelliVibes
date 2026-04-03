@@ -1,6 +1,6 @@
 // next-sitemap.config.js
 module.exports = {
-  siteUrl: 'https://internvibes.live', 
+  siteUrl: 'https://intellivibes.live', 
   generateRobotsTxt: true,
   sitemapSize: 5000,
 };

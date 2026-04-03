@@ -674,7 +674,7 @@ export default function AboutPage() {
 
                 <div className="story-quote accented" style={{ marginTop: 14 }}>
                   <p>
-                    That spark became <strong>InternVibes</strong> — a platform dedicated to connecting students with verified internships so no one has to waste time chasing dead ends.
+                    That spark became <strong>intellivibes</strong> — a platform dedicated to connecting students with verified internships so no one has to waste time chasing dead ends.
                   </p>
                 </div>
               </div>
@@ -687,7 +687,7 @@ export default function AboutPage() {
                       <Heart size={26} color="#fff" />
                     </div>
                     <div>
-                      <p className="founder-name">InternVibes</p>
+                      <p className="founder-name">intellivibes</p>
                       <p className="founder-role">Founded with a mission to help students</p>
                     </div>
                   </div>
@@ -779,7 +779,7 @@ export default function AboutPage() {
                 <span>Why choose us</span>
               </div>
               <h2 className="ab-heading">
-                Why trust <em>InternVibes?</em>
+                Why trust <em>intellivibes?</em>
               </h2>
             </div>
 

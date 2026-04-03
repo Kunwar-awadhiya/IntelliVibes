@@ -420,7 +420,7 @@ export default function CommunitySection() {
 
             <div className="cs-cta-buttons">
               <a
-                href="https://t.me/InternVibes"
+                href="https://t.me/intellivibes"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cs-btn-tg"
@@ -431,7 +431,7 @@ export default function CommunitySection() {
                 <ArrowRight size={15} />
               </a>
               <a
-                href="https://linkedin.com/company/internvibes/"
+                href="https://linkedin.com/company/intellivibes/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cs-btn-li"

@@ -468,7 +468,7 @@ export default function Account() {
             <div className="left-logo-icon">
               <Briefcase size={18} color="#fff" />
             </div>
-            <span className="left-logo-text">InternVibes</span>
+            <span className="left-logo-text">intellivibes</span>
           </div>
 
           <div className="left-content">
@@ -506,7 +506,7 @@ export default function Account() {
               <div className="mobile-logo-icon">
                 <Briefcase size={16} color="#fff" />
               </div>
-              <span className="mobile-logo-text">InternVibes</span>
+              <span className="mobile-logo-text">intellivibes</span>
             </div>
 
             <h1 className="auth-heading">

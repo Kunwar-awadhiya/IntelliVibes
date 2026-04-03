@@ -92,7 +92,7 @@ export default function AdminPage() {
               <Briefcase className="w-5 h-5 text-white" />
             </div>
             <div>
-              <h2 className="text-xl font-bold text-gray-900">InternVibes</h2>
+              <h2 className="text-xl font-bold text-gray-900">intellivibes</h2>
               <p className="text-xs text-gray-500">Admin Panel</p>
             </div>
           </div>
@@ -183,7 +183,7 @@ export default function AdminPage() {
             {/* Header */}
             <div className="mb-8">
               <h1 className="text-3xl font-bold text-gray-900 mb-2">Dashboard Overview</h1>
-              {/* <p className="text-gray-600">Welcome back! Here's what's happening with InternVibes today.</p> */}
+              {/* <p className="text-gray-600">Welcome back! Here's what's happening with intellivibes today.</p> */}
             </div>
 
             {/* Stats Grid */}

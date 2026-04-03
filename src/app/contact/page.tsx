@@ -13,8 +13,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'Email',
-    content: 'internvibesofficial@gmail.com',
-    href: 'mailto:internvibesofficial@gmail.com',
+    content: 'intellivibesofficial@gmail.com',
+    href: 'mailto:intellivibesofficial@gmail.com',
     accent: '#6366f1',
     accentLight: 'rgba(99,102,241,0.07)',
     accentBorder: 'rgba(99,102,241,0.18)',
@@ -22,8 +22,8 @@ const contactInfo = [
   {
     icon: MessageCircle,
     title: 'Telegram',
-    content: '@InternVibes',
-    href: 'https://t.me/InternVibes',
+    content: '@intellivibes',
+    href: 'https://t.me/intellivibes',
     accent: '#0ea5e9',
     accentLight: 'rgba(14,165,233,0.07)',
     accentBorder: 'rgba(14,165,233,0.18)',
@@ -31,8 +31,8 @@ const contactInfo = [
   {
     icon: Linkedin,
     title: 'LinkedIn',
-    content: '/company/internvibes',
-    href: 'https://linkedin.com/company/internvibes',
+    content: '/company/intellivibes',
+    href: 'https://linkedin.com/company/intellivibes',
     accent: '#2563eb',
     accentLight: 'rgba(37,99,235,0.07)',
     accentBorder: 'rgba(37,99,235,0.18)',
@@ -69,7 +69,7 @@ export default function ContactPage() {
           from_name: name,
           to_name: 'Kunwar',
           from_email: email,
-          to_email: 'internvibesofficial@gmail.com',
+          to_email: 'intellivibesofficial@gmail.com',
           message,
         },
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
@@ -534,7 +534,7 @@ export default function ContactPage() {
               Let's <em>connect</em><br />and build together.
             </h1>
             <p className="ct-hero-sub">
-              Have a question, feedback, or want to partner with InternVibes? We're just a message away.
+              Have a question, feedback, or want to partner with intellivibes? We're just a message away.
             </p>
           </div>
         </div>

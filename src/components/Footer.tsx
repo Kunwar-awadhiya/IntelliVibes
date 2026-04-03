@@ -16,11 +16,11 @@ export default function Footer() {
           {/* ===== BRAND ===== */}
           <div className="lg:col-span-2 space-y-6">
             <h2 className="text-3xl font-black text-white">
-              InternVibes
+              intellivibes
             </h2>
 
             <p className="text-gray-200 leading-relaxed">
-              InternVibes is a curated platform helping students discover
+              intellivibes is a curated platform helping students discover
               verified internships and job opportunities from trusted companies.
             </p>
 
@@ -28,10 +28,10 @@ export default function Footer() {
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-blue-400" />
                 <a
-                  href="mailto:internvibesofficial@gmail.com"
+                  href="mailto:intellivibesofficial@gmail.com"
                   className="hover:text-white transition"
                 >
-                  internvibesofficial@gmail.com
+                  intellivibesofficial@gmail.com
                 </a>
               </div>
 
@@ -44,7 +44,7 @@ export default function Footer() {
             {/* Social */}
             <div className="flex gap-4 pt-2">
               <a
-                href="https://www.linkedin.com/company/internvibes"
+                href="https://www.linkedin.com/company/intellivibes"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-white transition"
@@ -52,7 +52,7 @@ export default function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="https://www.instagram.com/internvibes.live"
+                href="https://www.instagram.com/intellivibes.live"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-white transition"
@@ -103,7 +103,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           
           <p className="text-sm text-gray-400 text-center md:text-left">
-            © {new Date().getFullYear()} InternVibes. All rights reserved.
+            © {new Date().getFullYear()} intellivibes. All rights reserved.
           </p>
 
           <div className="flex gap-6 text-sm text-gray-400">

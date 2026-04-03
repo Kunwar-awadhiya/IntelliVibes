@@ -416,7 +416,7 @@ export default function HowItWorks() {
           <div className="hiw-cta">
             <div className="hiw-cta-left">
               <p className="hiw-cta-title">Ready to find your internship?</p>
-              <p className="hiw-cta-sub">Join hundreds of students already using InternVibes.</p>
+              <p className="hiw-cta-sub">Join hundreds of students already using intellivibes.</p>
             </div>
             <a href="/internships" className="hiw-cta-btn">
               Browse Internships

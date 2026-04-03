@@ -8,35 +8,35 @@ import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   title: {
-    default: 'InternVibes – Best Internships & Jobs for Students in India',
-    template: '%s | InternVibes',
+    default: 'intellivibes – Best Internships & Jobs for Students in India',
+    template: '%s | intellivibes',
   },
-  description: 'InternVibes helps students find the best internships and entry-level jobs in India. Curated from trusted sources like company career pages, Internshala, LinkedIn, Unstop, and more. Updated daily.',
+  description: 'intellivibes helps students find the best internships and entry-level jobs in India. Curated from trusted sources like company career pages, Internshala, LinkedIn, Unstop, and more. Updated daily.',
   keywords: [
     'internships', 'internshala', 'remote internships', 'India internships',
     'Cuvette', 'engineering internship', 'marketing internship',
-    'internship in bangalore', 'jobs', 'InternVibes', 'Internvibes',
-    'internVibes', 'internvibes', 'remote jobs' , 'founder of Internvibes kunwar awadhiya' , 'Internvibes telegram' , 'Internvibes insta', 'internvibes Linkdln page' , 'Internvibes.live' , 'Intervibes live',
-    'founder of internvibes is kunwar awadhiya' , 'kunwar awadhiya is the founder of InternVibes' , 'InternVibes.live',
+    'internship in bangalore', 'jobs', 'intellivibes', 'intellivibes',
+    'intellivibes', 'intellivibes', 'remote jobs' , 'founder of intellivibes kunwar awadhiya' , 'intellivibes telegram' , 'intellivibes insta', 'intellivibes Linkdln page' , 'intellivibes.live' , 'Intervibes live',
+    'founder of intellivibes is kunwar awadhiya' , 'kunwar awadhiya is the founder of intellivibes' , 'intellivibes.live',
   ],
-  creator: 'Kunwar Awadhiya (Founder of InternVibes)',
+  creator: 'Kunwar Awadhiya (Founder of intellivibes)',
   authors: [
     { name: 'Kunwar Awadhiya', url: 'https://in.linkedin.com/in/kunwar-awadhiya' },
-    { name: 'InternVibes Team', url: 'https://internvibes.live' }
+    { name: 'intellivibes Team', url: 'https://intellivibes.live' }
   ],
-  metadataBase: new URL('https://internvibes.live'),
+  metadataBase: new URL('https://intellivibes.live'),
 
   openGraph: {
-    title: 'InternVibes – Curated Internships and Jobs in India',
+    title: 'intellivibes – Curated Internships and Jobs in India',
     description: 'Explore top internship opportunities from trusted platforms. Verified, filtered, and updated regularly.',
-    url: 'https://internvibes.live',
-    siteName: 'InternVibes',
+    url: 'https://intellivibes.live',
+    siteName: 'intellivibes',
     images: [
       {
-        url: 'https://internvibes.live/favicon.ico',
+        url: 'https://intellivibes.live/favicon.ico',
         width: 1200,
         height: 630,
-        alt: 'InternVibes Internship Banner',
+        alt: 'intellivibes Internship Banner',
       },
     ],
     locale: 'en_IN',
@@ -45,10 +45,10 @@ export const metadata: Metadata = {
 
   twitter: {
     card: 'summary_large_image',
-    title: 'InternVibes – Explore Internships and Jobs in India',
-    description: 'Verified and curated internships and jobs updated weekly. Join InternVibes and land your dream role!',
-    creator: '@internvibes',
-    images: ['https://internvibes.live/favicon.ico'],
+    title: 'intellivibes – Explore Internships and Jobs in India',
+    description: 'Verified and curated internships and jobs updated weekly. Join intellivibes and land your dream role!',
+    creator: '@intellivibes',
+    images: ['https://intellivibes.live/favicon.ico'],
   },
 
   icons: {
@@ -67,18 +67,18 @@ export const metadata: Metadata = {
   other: {
     'google-site-verification': 'J3N-NWqggCWN9bGr61oq-zoKQuaIYygYk8QNQ5iLCOg',
     'author': 'Kunwar Awadhiya',
-    'publisher': 'InternVibes',
-    'canonical': 'https://internvibes.live/',
-    'alternate': 'https://internvibes.live/',
+    'publisher': 'intellivibes',
+    'canonical': 'https://intellivibes.live/',
+    'alternate': 'https://intellivibes.live/',
     'schema': JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "InternVibes",
-      "url": "https://internvibes.live",
-      "logo": "https://internvibes.live/images/logo.png",
+      "name": "intellivibes",
+      "url": "https://intellivibes.live",
+      "logo": "https://intellivibes.live/images/logo.png",
       "sameAs": [
-        "https://www.linkedin.com/company/internvibes",
-        "https://t.me/internvibes"
+        "https://www.linkedin.com/company/intellivibes",
+        "https://t.me/intellivibes"
       ],
       "founder": {
         "@type": "Person",
