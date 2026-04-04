@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://intellivibes.live/about</loc><lastmod>2026-03-29T10:41:01.869Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://intellivibes.live/account</loc><lastmod>2026-03-29T10:41:01.871Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://intellivibes.live/admin</loc><lastmod>2026-03-29T10:41:01.871Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://intellivibes.live/contact</loc><lastmod>2026-03-29T10:41:01.871Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://intellivibes.live/dashboard</loc><lastmod>2026-03-29T10:41:01.871Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://intellivibes.live/internships</loc><lastmod>2026-03-29T10:41:01.871Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://intellivibes.live</loc><lastmod>2026-03-29T10:41:01.871Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://intellivibes.live/privacy</loc><lastmod>2026-03-29T10:41:01.871Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://intellivibes.live/profile</loc><lastmod>2026-03-29T10:41:01.871Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://intellivibes.live/signup</loc><lastmod>2026-03-29T10:41:01.871Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://intellivibes.live/submit</loc><lastmod>2026-03-29T10:41:01.871Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://intellivibes.live/terms</loc><lastmod>2026-03-29T10:41:01.871Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://intellivibes.live/about</loc><lastmod>2026-04-04T01:41:09.704Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://intellivibes.live/Account</loc><lastmod>2026-04-04T01:41:09.705Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://intellivibes.live/admin</loc><lastmod>2026-04-04T01:41:09.705Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://intellivibes.live/contact</loc><lastmod>2026-04-04T01:41:09.705Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://intellivibes.live/dashboard</loc><lastmod>2026-04-04T01:41:09.705Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://intellivibes.live/internships</loc><lastmod>2026-04-04T01:41:09.705Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://intellivibes.live</loc><lastmod>2026-04-04T01:41:09.705Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://intellivibes.live/privacy</loc><lastmod>2026-04-04T01:41:09.705Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://intellivibes.live/profile</loc><lastmod>2026-04-04T01:41:09.705Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://intellivibes.live/signup</loc><lastmod>2026-04-04T01:41:09.705Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://intellivibes.live/submit</loc><lastmod>2026-04-04T01:41:09.705Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://intellivibes.live/terms</loc><lastmod>2026-04-04T01:41:09.705Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://intellivibes.live/url-checker</loc><lastmod>2026-04-04T01:41:09.705Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>

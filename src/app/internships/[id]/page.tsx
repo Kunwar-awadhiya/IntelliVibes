@@ -6,31 +6,42 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import {
-  MapPin, Briefcase, DollarSign, ExternalLink, ArrowLeft,
-  Clock, Bookmark, Share2, CheckCircle, Building2, Globe,
+  MapPin,
+  Briefcase,
+  DollarSign,
+  ExternalLink,
+  ArrowLeft,
+  Clock,
+  Bookmark,
+  Share2,
+  CheckCircle,
+  Building2,
+  Globe,
 } from "lucide-react";
 
 const ROLE_COLORS: Record<string, string> = {
   Technology: "linear-gradient(135deg,#6366f1,#818cf8)",
-  Marketing:  "linear-gradient(135deg,#f59e0b,#fbbf24)",
-  Finance:    "linear-gradient(135deg,#ef4444,#f87171)",
-  Design:     "linear-gradient(135deg,#a855f7,#c084fc)",
-  Default:    "linear-gradient(135deg,#6366f1,#a855f7)",
+  Marketing: "linear-gradient(135deg,#f59e0b,#fbbf24)",
+  Finance: "linear-gradient(135deg,#ef4444,#f87171)",
+  Design: "linear-gradient(135deg,#a855f7,#c084fc)",
+  Default: "linear-gradient(135deg,#6366f1,#a855f7)",
 };
 
 export default function InternshipDetails() {
   const { id } = useParams();
   const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
-  const [intern, setIntern]   = useState<any>(null);
+  const [intern, setIntern] = useState<any>(null);
   const [loading, setLoading] = useState(true);
-  const [saved, setSaved]     = useState(false);
-  const [copied, setCopied]   = useState(false);
+  const [saved, setSaved] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const [analysis, setAnalysis] = useState<any>(null);
+  const [analyzing, setAnalyzing] = useState(false);
 
   useEffect(() => {
     const load = async () => {
       try {
-        const res  = await fetch(`${API_URL}/internships/${id}`);
+        const res = await fetch(`${API_URL}/internships/${id}`);
         const json = await res.json();
         setIntern(json.data);
       } finally {
@@ -39,6 +50,22 @@ export default function InternshipDetails() {
     };
     load();
   }, [id]);
+
+  const handleAnalyze = async () => {
+    try {
+      setAnalyzing(true);
+      setAnalysis(null);
+
+      const res = await fetch(`${API_URL}/analyze/${id}`);
+      const data = await res.json();
+
+      setAnalysis(data);
+    } catch (err) {
+      console.error("Analyze failed");
+    } finally {
+      setAnalyzing(false);
+    }
+  };
 
   const handleShare = () => {
     navigator.clipboard.writeText(window.location.href);
@@ -289,7 +316,6 @@ export default function InternshipDetails() {
           </div>
         ) : (
           <div className="id-page">
-
             {/* ── MAIN ── */}
             <div>
               {/* Breadcrumb */}
@@ -303,7 +329,10 @@ export default function InternshipDetails() {
 
               {/* Hero card */}
               <div className="id-hero">
-                <div className="id-hero-banner" style={{ background: gradient }}>
+                <div
+                  className="id-hero-banner"
+                  style={{ background: gradient }}
+                >
                   <div className="id-hero-banner-grid" />
                 </div>
 
@@ -330,7 +359,9 @@ export default function InternshipDetails() {
                 </div>
 
                 <div className="id-hero-body">
-                  {intern.role && <div className="id-role-pill">{intern.role}</div>}
+                  {intern.role && (
+                    <div className="id-role-pill">{intern.role}</div>
+                  )}
                   <h1 className="id-title">{intern.title}</h1>
                   <p className="id-company">
                     <Building2 size={16} color="#aaa" />
@@ -338,26 +369,101 @@ export default function InternshipDetails() {
                   </p>
 
                   <div className="id-chips">
-                    <span className="id-chip"><MapPin size={14} />{intern.location}</span>
-                    {intern.duration && <span className="id-chip"><Clock size={14} />{intern.duration}</span>}
-                    {intern.stipend && <span className="id-chip green"><DollarSign size={14} />{intern.stipend}</span>}
-                    {intern.remote  && <span className="id-chip indigo"><Globe size={14} />Remote</span>}
-                    {intern.platform && <span className="id-chip"><Briefcase size={14} />{intern.platform}</span>}
+                    <span className="id-chip">
+                      <MapPin size={14} />
+                      {intern.location}
+                    </span>
+                    {intern.duration && (
+                      <span className="id-chip">
+                        <Clock size={14} />
+                        {intern.duration}
+                      </span>
+                    )}
+                    {intern.stipend && (
+                      <span className="id-chip green">
+                        <DollarSign size={14} />
+                        {intern.stipend}
+                      </span>
+                    )}
+                    {intern.remote && (
+                      <span className="id-chip indigo">
+                        <Globe size={14} />
+                        Remote
+                      </span>
+                    )}
+                    {intern.platform && (
+                      <span className="id-chip">
+                        <Briefcase size={14} />
+                        {intern.platform}
+                      </span>
+                    )}
                   </div>
 
-                  <a href={intern.applyLink} target="_blank" rel="noopener noreferrer" className="id-apply-btn">
+                  <a
+                    href={intern.applyLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="id-apply-btn"
+                  >
                     Apply Now <ExternalLink size={15} />
                   </a>
+                  <button
+                    onClick={handleAnalyze}
+                    className="mt-4 px-6 py-3 bg-indigo-600 rounded-lg hover:bg-indigo-700 font-semibold"
+                  >
+                    {analyzing ? "Analyzing..." : "Analyze Internship"}
+                  </button>
 
-                  {copied && <p className="id-copy-hint">Link copied to clipboard!</p>}
+                  {copied && (
+                    <p className="id-copy-hint">Link copied to clipboard!</p>
+                  )}
                 </div>
               </div>
+
+              {analysis && (
+  <div className="id-card mt-4">
+    <p className="id-sec-label">AI Analysis</p>
+    <h2 className="id-sec-title">Trust Evaluation</h2>
+
+    <p className="mb-2 id-sec-title">
+      <strong>Trust Score:</strong> {analysis.trustScore}/100
+    </p>
+
+    <p
+      className={`mb-2 font-semibold ${
+        analysis.status === "Safe"
+          ? "text-green-500"
+          : analysis.status === "Suspicious"
+          ? "text-yellow-500"
+          : "text-red-500"
+      }`}
+    >
+      Status: {analysis.status}
+    </p>
+
+    <p
+    className="mb-2 id-sec-title"
+    >
+      <strong>Reason:</strong> {analysis.reason}
+    </p>
+
+    {/* Progress Bar */}
+    <div className="mt-4 w-full bg-gray-200 rounded-full h-3">
+      <div
+        className="h-3 rounded-full bg-indigo-500"
+        style={{ width: `${analysis.trustScore}%` }}
+      />
+    </div>
+  </div>
+)}
 
               {/* About card */}
               <div className="id-card">
                 <p className="id-sec-label">Overview</p>
                 <h2 className="id-sec-title">About the Internship</h2>
-                <p className="id-desc">{intern.description || "No description available."}</p>
+                <p className="id-desc">
+                  {intern.description || "No description available."}
+                </p>
 
                 {intern.skills?.length > 0 && (
                   <>
@@ -365,7 +471,9 @@ export default function InternshipDetails() {
                     <p className="id-sec-label">Skills Required</p>
                     <div className="id-skills">
                       {intern.skills.map((s: string) => (
-                        <span key={s} className="id-skill">{s}</span>
+                        <span key={s} className="id-skill">
+                          {s}
+                        </span>
                       ))}
                     </div>
                   </>
@@ -376,7 +484,11 @@ export default function InternshipDetails() {
                 <div className="id-perks">
                   {perks.map((p) => (
                     <div key={p} className="id-perk">
-                      <CheckCircle size={16} color="#22c55e" style={{ flexShrink: 0, marginTop: 1 }} />
+                      <CheckCircle
+                        size={16}
+                        color="#22c55e"
+                        style={{ flexShrink: 0, marginTop: 1 }}
+                      />
                       {p}
                     </div>
                   ))}
@@ -386,26 +498,61 @@ export default function InternshipDetails() {
 
             {/* ── SIDEBAR ── */}
             <div className="id-sidebar mt-11">
-
               {/* Details card */}
               <div className="id-scard">
                 <div className="id-scard-head">
                   <div className="id-scard-head-icon">
                     <Briefcase size={14} color="#a5b4fc" />
                   </div>
-                  <span className="id-scard-head-title">Internship Details</span>
+                  <span className="id-scard-head-title">
+                    Internship Details
+                  </span>
                 </div>
                 <div className="id-scard-body">
-                  {([
-                    { icon: <Building2 size={15} color="#6366f1" />, bg: "rgba(99,102,241,0.08)",  label: "Company",  val: intern.company },
-                    { icon: <MapPin     size={15} color="#0ea5e9" />, bg: "rgba(14,165,233,0.08)",  label: "Location", val: intern.location },
-                    { icon: <DollarSign size={15} color="#10b981" />, bg: "rgba(16,185,129,0.08)",  label: "Stipend",  val: intern.stipend ?? "Not specified" },
-                    { icon: <Clock      size={15} color="#f59e0b" />, bg: "rgba(245,158,11,0.08)",  label: "Duration", val: intern.duration ?? "Not specified" },
-                    { icon: <Globe      size={15} color="#a855f7" />, bg: "rgba(168,85,247,0.08)",  label: "Type",     val: intern.remote ? "Remote" : "On-site" },
-                    { icon: <Briefcase  size={15} color="#ef4444" />, bg: "rgba(239,68,68,0.08)",   label: "Platform", val: intern.platform ?? "—" },
-                  ] as const).map(({ icon, bg, label, val }) => (
+                  {(
+                    [
+                      {
+                        icon: <Building2 size={15} color="#6366f1" />,
+                        bg: "rgba(99,102,241,0.08)",
+                        label: "Company",
+                        val: intern.company,
+                      },
+                      {
+                        icon: <MapPin size={15} color="#0ea5e9" />,
+                        bg: "rgba(14,165,233,0.08)",
+                        label: "Location",
+                        val: intern.location,
+                      },
+                      {
+                        icon: <DollarSign size={15} color="#10b981" />,
+                        bg: "rgba(16,185,129,0.08)",
+                        label: "Stipend",
+                        val: intern.stipend ?? "Not specified",
+                      },
+                      {
+                        icon: <Clock size={15} color="#f59e0b" />,
+                        bg: "rgba(245,158,11,0.08)",
+                        label: "Duration",
+                        val: intern.duration ?? "Not specified",
+                      },
+                      {
+                        icon: <Globe size={15} color="#a855f7" />,
+                        bg: "rgba(168,85,247,0.08)",
+                        label: "Type",
+                        val: intern.remote ? "Remote" : "On-site",
+                      },
+                      {
+                        icon: <Briefcase size={15} color="#ef4444" />,
+                        bg: "rgba(239,68,68,0.08)",
+                        label: "Platform",
+                        val: intern.platform ?? "—",
+                      },
+                    ] as const
+                  ).map(({ icon, bg, label, val }) => (
                     <div key={label} className="id-det-row">
-                      <div className="id-det-icon" style={{ background: bg }}>{icon}</div>
+                      <div className="id-det-icon" style={{ background: bg }}>
+                        {icon}
+                      </div>
                       <div>
                         <div className="id-det-label">{label}</div>
                         <div className="id-det-val">{val}</div>
@@ -418,26 +565,35 @@ export default function InternshipDetails() {
               {/* CTA card */}
               <div className="id-cta">
                 <p className="id-cta-label">Ready to apply?</p>
-                <h3 className="id-cta-title">Take the<br /><em>next step.</em></h3>
+                <h3 className="id-cta-title">
+                  Take the
+                  <br />
+                  <em>next step.</em>
+                </h3>
                 <p className="id-cta-sub">
-                  Great internships fill up fast. Apply directly on {intern.platform ?? "the company portal"}.
+                  Great internships fill up fast. Apply directly on{" "}
+                  {intern.platform ?? "the company portal"}.
                 </p>
-                <a href={intern.applyLink} target="_blank" rel="noopener noreferrer" className="id-cta-btn">
+                <a
+                  href={intern.applyLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="id-cta-btn"
+                >
                   Apply Now <ExternalLink size={15} />
                 </a>
+
                 {intern.platform && (
                   <div className="id-platform-badge">
                     <Globe size={13} /> via {intern.platform}
                   </div>
                 )}
               </div>
-
               {/* Back link */}
               <Link href="/internships" className="id-back-link">
                 <ArrowLeft size={15} /> Back to all internships
               </Link>
             </div>
-
           </div>
         )}
 
