@@ -15,6 +15,10 @@
 * 🧩 **Chrome Extension Repository**
   👉 https://github.com/Kunwar-awadhiya/IntelliVibes-Extension
 
+* 🧩 **Live Link**
+  👉 https://drive.google.com/file/d/1r7Uefy5NWLGNr0wc4iZut1SO2a5ymN7m/view?usp=sharing
+
+
 ---
 
 ## 🧠 Problem Statement
