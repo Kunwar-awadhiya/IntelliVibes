@@ -1,36 +1,160 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 IntelliVibes
 
-## Getting Started
+> An AI-powered platform that enhances user productivity, focus, and digital experience through smart integrations and real-time insights.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🌐 Project Links
+
+* 🎨 **Frontend Repository**
+  👉 https://github.com/Kunwar-awadhiya/IntelliVibes
+
+* ⚙️ **Backend Repository**
+  👉 https://github.com/Kunwar-awadhiya/IntelliVibes-B
+
+* 🧩 **Chrome Extension Repository**
+  👉 https://github.com/Kunwar-awadhiya/IntelliVibes-Extension
+
+---
+
+## 🧠 Problem Statement
+
+In today's digital world, users constantly struggle with:
+
+* ❌ Distractions while browsing
+* ❌ Lack of personalized productivity tools
+* ❌ No real-time emotional or focus tracking
+* ❌ Switching between multiple apps for tasks
+
+This leads to:
+
+* Reduced productivity
+* Mental fatigue
+* Inefficient workflow
+
+---
+
+## 💡 Solution: IntelliVibes
+
+**IntelliVibes** solves this by providing an **AI-powered ecosystem** that integrates directly into the user's workflow.
+
+### ✨ Key Features
+
+* 🧠 **Smart Focus Detection**
+  Tracks user behavior and suggests improvements
+
+* 🔔 **Real-time Alerts & Suggestions**
+  Helps users stay productive
+
+* 🌐 **Chrome Extension Integration**
+  Works directly inside the browser
+
+* ⚡ **Fast & Scalable Backend**
+  Handles real-time data efficiently
+
+* 🎨 **Clean UI/UX Frontend**
+  Easy to use and visually appealing
+
+---
+
+## 🏗️ Architecture Overview
+
+```
+Frontend (React / Next.js)
+        ↓
+Backend (Node.js / Express / APIs)
+        ↓
+AI Processing & Data Handling
+        ↓
+Chrome Extension (User Interaction Layer)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Frontend
 
-## Learn More
+* React.js / Next.js
+* Tailwind CSS
 
-To learn more about Next.js, take a look at the following resources:
+### Backend
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* Node.js
+* Express.js
+* MongoDB / Firebase
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Chrome Extension
 
-## Deploy on Vercel
+* JavaScript
+* Chrome APIs
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 How to Run Locally
+
+### 1️⃣ Clone Repositories
+
+```bash
+git clone https://github.com/Kunwar-awadhiya/IntelliVibes
+git clone https://github.com/Kunwar-awadhiya/IntelliVibes-B
+git clone https://github.com/Kunwar-awadhiya/IntelliVibes-Extension
+```
+
+---
+
+### 2️⃣ Setup Frontend
+
+```bash
+cd intellivibes-frontend
+npm install
+npm run dev
+```
+
+---
+
+### 3️⃣ Setup Backend
+
+```bash
+cd intellivibes-backend
+npm install
+npm start
+```
+
+---
+
+### 4️⃣ Load Chrome Extension
+
+* Go to `chrome://extensions/`
+* Enable **Developer Mode**
+* Click **Load Unpacked**
+* Select `intellivibes-extension` folder
+
+---
+
+## 📈 Future Improvements
+
+* 🔮 Advanced AI predictions
+* 📊 Detailed analytics dashboard
+* 📱 Mobile app integration
+* 🧩 More browser extensions
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to fork the repo and submit PRs.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+Made with ❤️ by TEAM-OPTIMUS
+
+---
